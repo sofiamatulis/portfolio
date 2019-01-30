@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Work from './Work'
+import Education from './Education'
+import Employment from './Employment'
+import FunFacts from './FunFacts'
+import Languages from './Languages'
+import FunProjects from './FunProjects'
+import PersonalInfo from './PersonalInfo'
+
 import './App.css';
 
 class App extends Component {
@@ -7,19 +14,21 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h1>
+            Sofia Matulis
+          </h1>
+          <h2> Full Stack Developer </h2>
+          <a className="about-me-button" href="#aboutme"> About Me </a>
         </header>
+        <main id="aboutme">
+          <Work />
+          <Education />
+          <Employment />
+          <FunFacts />
+          <FunProjects />
+          <Languages />
+          <PersonalInfo />
+        </main>
       </div>
     );
   }
